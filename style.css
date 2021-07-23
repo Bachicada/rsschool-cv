@@ -1,0 +1,61 @@
+body {
+    max-width: 1049px;
+    margin: 0 auto;
+    font-family:serif;
+     }
+header{
+    background: rgb(232,247,244);
+    background: linear-gradient(90deg, rgba(232,247,244,1) 0%, rgba(36,48,88,1) 100%);
+      }
+.CVbody, 
+.top {
+    display:flex;
+    justify-content: space-around;
+    font-size: 20px;
+               }
+.top {
+    align-items: center;
+    flex-wrap:wrap;
+     } 
+#MyPhoto {
+    max-width:320px;
+    border:solid 3px #243058; 
+    position:relative;
+    top: 45px;
+         }
+#Name, 
+#Contacts,
+#Contacts a, 
+footer a{color: #e8f7f4;}   
+
+#Contacts {margin-top: 10px;}                                     
+h1{font-size:40px;}
+.iconpic {width:30px;}
+h3{
+    font-size:25px;
+    font-variant:small-caps;
+    background: rgb(247,183,174);
+    background: linear-gradient(45deg, rgba(247,183,174,0) 0%, rgba(224,3,18,1) 100%);
+   }
+#Contacts>ul>li {font-size:25px;}
+.CVbody {align-items: stretch;}
+article {text-align: center;}
+article, 
+.CVbody {
+    font-size: 20px;
+    background: #EDE8F6;
+       }
+aside,
+main {margin-left: 20px;}
+
+#flogo {width:100px;}
+footer {
+    background: #243058; 
+    padding: 20px;
+    text-align: center;
+       }
+time {
+    font-size:20px;
+    font-weight: bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
