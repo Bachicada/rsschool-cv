@@ -1,0 +1,10 @@
+.container {margin: 0 auto;
+            max-width: 1440px;}
+section {border: 1px solid red;}
+header {background: #030303;}
+.logo {height: 50px;
+    width: 195px;
+    left: -70px;
+    top: 0px;
+    border-radius: 0px;    
+    background-image: url("assets/svg/Vector.svg");}
