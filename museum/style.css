@@ -1,10 +1,99 @@
-.container {margin: 0 auto;
-            max-width: 1440px;}
-section {border: 1px solid red;}
-header {background: #030303;}
-.logo {height: 50px;
-    width: 195px;
-    left: -70px;
-    top: 0px;
-    border-radius: 0px;    
-    background-image: url("assets/svg/Vector.svg");}
+@font-face {
+    font-family: Roboto;
+     src: url("assets/fonts/Roboto-Thin.ttf");
+   }
+
+   @font-face {
+    font-family: Forum;
+     src: url("assets/fonts/Forum-Regular.ttf");
+   }
+html {scroll-behavior: smooth;}
+.container-body{margin: 0 auto;
+          max-width: 1920px;
+                }
+.container {padding-left: 240px;
+           padding-right: 240px;}
+#header {
+         background: #030303;
+          display: flex;
+          align-items: center; }
+.logo {
+  background-image: url(assets/svg/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50px;
+  padding-left:70px; 
+  font-family: Forum;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform:uppercase;
+  color:#FFFFFF;}
+nav{margin-left: 525px;}
+nav>ul {display: flex;}
+nav>ul>li { list-style: none; padding-right: 76px;}
+nav {max-width: 720px;}
+nav>ul>li>a{
+  font-family: Roboto;
+font-style: Thin;
+font-size: 22px;
+line-height: 50px;
+text-align: left;
+letter-spacing: 2px;
+  color:#E5E5E5;
+  text-decoration: none;   
+ }
+
+ section{padding-top: 75px;
+ }
+  
+#visiting {padding-top: 90px;}
+
+.dark-section {background: #030303;
+          background-image: url("assets/img/background-header.jpg");
+          background-size: 1215px 750px;
+          background-repeat: no-repeat;
+          background-position: right;
+          padding-bottom: 246px;}
+h1 {font-family: Forum;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 5px;
+  text-align: left;
+  color:#E5E5E5;
+  text-transform:uppercase;}
+h3 {margin-top: 26px;
+  margin-bottom:76px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 2px;
+  text-align: left;
+  color:#FFFFFF;
+  }
+#button{
+  
+  height: 75px;
+  width: 360px;
+  border-radius: 10px;
+  background:#710707;
+  display: table-cell; 
+  vertical-align: middle;
+  text-align: center;}
+#button>a{
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color:#FFFFFF;
+  text-decoration:none;
+}
