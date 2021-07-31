@@ -6,19 +6,19 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="container-body">
+   
     <header>
-        <div id="header" class="container">
+        <div id="top-header" class="container">
             <div class="logo">
-                <p>Louvre</p>
+                <h1>Louvre</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="#visiting"> Visiting </a></li>
-                    <li><a href="#explore"> Explore </a></li>
-                    <li><a href="#video"> Video </a></li>
-                    <li><a href="#tickets"> Tickets </a></li>
-                    <li> <a href="#contacts"> Contacts </a></li>
+                    <li class="navigation"><a href="#explore"> Explore </a></li>
+                    <li class="navigation"><a href="#video"> Video </a></li>
+                    <li class="navigation"><a href="#tickets"> Tickets </a></li>
+                    <li class="navigation"> <a href="#contacts"> Contacts </a></li>
                 </ul>
             </nav>
         </div>    
@@ -26,28 +26,91 @@
  
     <main>
         <section class="dark-section">
-            <div id="welcome" class="container">
-                <h1> Welcome <p>to the Louvre</p></h1>
-                <h3> From the castle to the museum </h3>
-                <div id="button"><a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover the Louvre</a></div>
+            <div class="container" >
+                <div>
+                   <h2> Welcome <p id="welcome">to the Louvre</p></h2>
+                   <h4> From the castle to the museum </h4>
+                   <div id="button">
+                       <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover the Louvre</a>
+                   </div>
+                </div>
             </div>
         </section>
-<!---     
+
         <section>
             <div id="visiting" class="container">
+                <h3>Virtual tour</h3>
+                <div class="virtual-cards">    
+                    <a href="">
+                        <img src="assets/img/royal-palace.jpg" alt="Royal Palace">
+                        <h5>Royal palace</h5>
+                        <p class="discription">360° Virtual Tour</p>
+                        <p class="discription-2">Google Street Panorama View</p>
+                    </a>
+                    <a href="">
+                        <img src="assets/img/denon-wing.jpg" alt="Denon wing">
+                        <h5>Denon wing</h5>
+                        <p class="discription">360° Virtual Tour</p>
+                        <p class="discription-2">Google Street Panorama View</p>
+                    </a>
+                    <a href="">
+                        <img src="assets/img/colonnade-perrault.jpg" alt="Colonnade perrault">
+                        <h5>Colonnade perrault</h5>
+                        <p class="discription">360° Virtual Tour</p>
+                        <p class="discription-2">Google Street Panorama View</p>
+                    </a>
+                    <a href="">
+                        <img src="assets/img/greek-hall.jpg" alt="Greek hall">
+                        <h5>Greek hall</h5>
+                        <p class="discription">360° Virtual Tour</p>
+                        <p class="discription-2">Google Street Panorama View</p>
+                    </a>
+                    <a href="">
+                        <img src="assets/img/mona-lisa.jpg" alt="Mona Lisa">
+                        <h5>Mona Lisa</h5>
+                        <p class="discription">360° Virtual Tour</p>
+                        <p class="discription-2">Google Street Panorama View</p>
+                    </a>
+                    <a href="">
+                        <img src="assets/img/night-palace.jpg" alt="Night palace">
+                        <h5>Night palace</h5>
+                        <p class="discription">360° Virtual Tour</p>
+                        <p class="discription-2">Google Street Panorama View</p>
+                    </a>
+
+                </div>   
             </div>
         </section>
-
-        <section>
+   
+        <section class="dark-section-video">
             <div id="explore" class="container">
+                <div>
+                    <h2>Picture explore</h2>
+                    <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+                    <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                    <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                </div>
+                <img src="assets/img/picture-explore.jpg" alt="Las Meninas">
             </div>
         </section>
 
         <section>
-            <div id="video" class="container">
+            <div class="container">
+                <div id="video-player">
+                    <div id="video">
+                        <div id="play-button">
+                        </div>
+                    </div>
+                    <div id="progress-bar">
+                        <button><img src="assets/img/button-left.png" alt="Play previous"> </button>
+                        <button><img src="assets/img/button-play.png" alt="Play now"></button>
+                        <button><img src="assets/img/button-right.png" alt="Play next"></button>
+                        <input type="range" value="40" min="0" max="100" step="1" class="progress">
+                    </div>
+                </div>
             </div>
         </section>
-
+<!---
         <section>
             <div id="tickets" class="container">
             </div>
