@@ -98,6 +98,7 @@ h4 {
   height: 75px;
   width: 360px;
   border-radius: 10px;
+  border:none;
   background:#710707;
   display: table-cell; 
   vertical-align: middle;
@@ -190,14 +191,14 @@ text-decoration: none;}
 .dark-section-video {background-color: #000000;}
 #explore {
   display:flex;}
-#explore>div>h1 {position:relative;}
-#explore>div>h1::after {
+h2 {position:relative;}
+h2::after {
   content: "";
   position: absolute;
   height: 3px;
   width: 660px;
   left:0;
-  top: 25px;
+  top: 45px;
   background-color: #710707;
 }
 #explore>div>p {font-family: Roboto;
@@ -226,21 +227,136 @@ text-decoration: none;}
             width:220px;
             background-image: url(assets/img/button-main-play.png);            
  }
+#progress-bar{height:85px;
+            padding-left: 41px;
+             display:flex;
+             align-items: center;
+            justify-content: space-around
+            }
 #progress-bar>button{background: transparent;border:none;}
+#progress-bar>button:hover{filter: invert(59%) sepia(11%) saturate(0%) hue-rotate(139deg) brightness(102%) contrast(85%);}
+
 .progress {
-  background: linear-gradient(to right, #24809E 0%, #24809E 40%, #C4C4C4 40%, #C4C4C4 100%);
   border: solid 2px #24809E;
-  height: px;
-  width: 820px;
+  height: 8px;
   outline: none;
   transition: background 450ms ease-in;
   -webkit-appearance: none;
 }
 .progress::-webkit-slider-thumb {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   -webkit-appearance: none;
   cursor: ew-resize;
-  background: #434343;
+  background: #FFFFFF;
 }
+#video-bar{ width: 820px;
+  background: linear-gradient(to right, #24809E 0%, #24809E 388px, #C4C4C4 388px, #C4C4C4 100%);}
+#volume-bar{width:155px;
+  background: linear-gradient(to right, #24809E 0%, #24809E 60px, #C4C4C4 60px, #C4C4C4 100%);}
+
+.container>article {
+  padding-top: 40px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+ }
+.container>article>h3{margin-top: 0;margin-bottom: 0;}
+.container>article>p {
+  width:720px;
+  margin-top:0;
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #000000;}
+
+.dark-section-tickets{background: #030303;}
+#tickets{height: 743px;
+  padding-top: 103px;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+ }
+#tickets>img {height:550px;
+width:720px;}
+h6 {font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;}
+
+.type {font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.ticket-type {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ticket-type input{
+  position: absolute;
+  opacity: 0;
+  cursor: default;
+}
+.checkmark {position:absolute;
+  left: 0px;
+  height: 17px;
+  width: 17px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.type .checkmark:after {
+ left: 3px;
+ top:3px;
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+ background: #FFFFFF;
+}
+.type input:checked ~ .checkmark:after {
+  display: block;
+}
+.number {
+  all: unset;
+  width: 3em;
+  text-align: center;
+}
+.amount>p{font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color:#FFFFFF;
+}
+#total{font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;  
+  letter-spacing: 1.65px;
+    color: #FFFFFF;}
+#buy-now{height: 50px
+  width:175px;
+  background: #FFFFFF;
+  border-radius: 2px;}
+

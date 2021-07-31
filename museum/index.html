@@ -30,9 +30,9 @@
                 <div>
                    <h2> Welcome <p id="welcome">to the Louvre</p></h2>
                    <h4> From the castle to the museum </h4>
-                   <div id="button">
+                   <button id="button">
                        <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover the Louvre</a>
-                   </div>
+                   </button>
                 </div>
             </div>
         </section>
@@ -105,17 +105,63 @@
                         <button><img src="assets/img/button-left.png" alt="Play previous"> </button>
                         <button><img src="assets/img/button-play.png" alt="Play now"></button>
                         <button><img src="assets/img/button-right.png" alt="Play next"></button>
-                        <input type="range" value="40" min="0" max="100" step="1" class="progress">
-                    </div>
+                        <input type="range" value="47" min="0" max="100" step="1" id="video-bar" class="progress">
+                        <button><img src="assets/svg/button-volume.svg" alt="Volume"> </button>
+                        <input type="range" value="38" min="0" max="100" step="1" id="volume-bar" class="progress">
+                        <button><img src="assets/svg/button-full.svg" alt="Full screen"> </button>
+                    </div>  
                 </div>
-            </div>
-        </section>
-<!---
-        <section>
-            <div id="tickets" class="container">
+                <article>
+                    <h3>Video journey</h3>
+                    <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                </article> 
             </div>
         </section>
 
+        <section class="dark-section-tickets">
+            <div class="container">
+                <h2>Buy tickets</h2>
+                <div id="tickets">
+                     <img src="assets/img/tickets-fon.jpg" alt="Girl and The Night">
+                     <ul class="ticket-type"> 
+                        <p><h6>Ticket type</h6></p>
+                       <li>
+                           <label class="type">Permanent exhibition
+                                 <input type="radio" checked="checked" name="radio">
+                                 <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="type">Temporary exhibition
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>    
+                         <li>   
+                             <label class="type">Combined Admission
+                                   <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                             </label>
+                        </li>     
+                </ul>   
+                <div class="amount">
+                    <h6>Amount</h6>
+                    <p>Basic 18+</p>
+                        <button name="" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                    <p>Senior 65+</p>
+                        <button name="" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>    
+                    <p id="total">Total € 220</p>
+                    <button id="buy-now">Buy now</button>
+                </div>
+
+              </div>
+            </div>
+        </section>
+<!---
         <section>
             <div id="contacts" class="container">
             </div>
