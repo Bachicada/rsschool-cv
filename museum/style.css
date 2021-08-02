@@ -85,8 +85,10 @@ h2{font-family: Forum;
   text-align: left;
   text-transform:uppercase;
 }
-.dark-section h2{ color:#E5E5E5;}
-h2{color:#9D8665;
+
+.dark-section h2{ color:#FFFFFF;}
+.light-section h2{color:#9D8665;}
+#welcome h2{
 margin-top: 70px;
 margin-bottom: 26px;}
 #welcome-title {line-height: 20px;
@@ -140,7 +142,7 @@ h4 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 65px;
+  padding-top: 25px;
 }
 .virtual-cards>a {display: block;
                text-decoration: none;
@@ -198,6 +200,7 @@ h4 {
 
 #explore {
   display:flex;}
+#explore h2 {margin-top:45px;}
 
 #explore>div>p {font-family: Roboto;
   font-size: 22px;
