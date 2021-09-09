@@ -49,6 +49,9 @@ exports.avg = function avg (array) {
      return sum/array.length;
      }
 ```
+## Education level:
+- Higher education: Volodymyr Dahl East Ukrainian National University, Lugansk, Ukraine;\
+(*Specialization: Economics of enterprize*)
 
 ## Courses:
 *[JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/);
