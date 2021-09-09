@@ -2,12 +2,12 @@
 
 ## Contact details:
 **E-mail:** bachicada@gmail.com;\
-**Telegram:** [@MaryGub]('https://t.me/MaryGub');\
-**GitHub:** [https://github.com/Bachicada];\
+**Telegram:** [@MaryGub](https://t.me/MaryGub);\
+**GitHub:** [Bachicada](https://github.com/Bachicada);\
 **Discord:** Bachicada#7788;
 
 ## About myself: 
-> My academic specialization is economics. I'm fascionated by numbers and idea that the whole world may be represented by different mathematical and algorithmical models. Don't have much experience in coding, but looking forward to start.
+> My academic specialization is economics. I'm fascionated by numbers and idea that the whole world may be represented by different mathematical and algorithmical models. Don't have much experience in coding, but working till the proper result.
 
 ## Proffesional and personal skills:
 * Microsoft Office (Word, Excel, Outlook, PowerPoint);
@@ -49,6 +49,7 @@ exports.avg = function avg (array) {
      return sum/array.length;
      }
 ```
+
 ## Courses:
 *[JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/);
 
