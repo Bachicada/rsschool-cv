@@ -3,7 +3,7 @@
 ## Contact details:
 **E-mail:** bachicada@gmail.com;\
 **Telegram:** [@MaryGub]('https://t.me/MaryGub');\
-**GitHub:** [https://github.com/Bachicada](Bachicada);\
+**GitHub:** [https://github.com/Bachicada];\
 **Discord:** Bachicada#7788;
 
 ## About myself: 
@@ -12,12 +12,15 @@
 ## Proffesional and personal skills:
 * Microsoft Office (Word, Excel, Outlook, PowerPoint);
 * HTML/CSS;
-* Research
+* JavaScript Basics;
+* Git, GitHub
+* VS Code;
+* Research;
 * Organization.
 
 ## Code example:
 **Typical Arrays Problems:**
-*The goal the code to implement 3 functions: max, min, and avg for searching minimal value, maximal value, and an average value of a given array.*
+*The goal the of code to implement 3 functions: max, min, and avg for searching minimal value, maximal value, and an average value of a given array.*
 ```javascript
 exports.min = function min (array) {
   if ((array===undefined)||(array.length===0)){ return 0;}
@@ -49,3 +52,7 @@ exports.avg = function avg (array) {
 ## Courses:
 *[JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/);
 
+## Languages:
+* English - Intermediate;
+* Russian - Fluent;
+* Ukrainian - Native.
