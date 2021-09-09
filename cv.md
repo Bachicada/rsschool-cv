@@ -13,7 +13,7 @@
 * Microsoft Office (Word, Excel, Outlook, PowerPoint);
 * HTML/CSS;
 * JavaScript Basics;
-* Git, GitHub
+* Git, GitHub;
 * VS Code;
 * Research;
 * Organization.
