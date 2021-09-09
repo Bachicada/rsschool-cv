@@ -2,9 +2,9 @@
 
 ## Contact details:
 **E-mail:** bachicada@gmail.com;\
-**Telegram:** ['https://t.me/MaryGub'](@MaryGub);\
+**Telegram:** [@MaryGub]('https://t.me/MaryGub');\
 **GitHub:** [https://github.com/Bachicada](Bachicada);\
-**Discord:** Bachicada#7788;\
+**Discord:** Bachicada#7788;
 
 ## About myself: 
 > My academic specialization is economics. I'm fascionated by numbers and idea that the whole world may be represented by different mathematical and algorithmical models. Don't have much experience in coding, but looking forward to start.
