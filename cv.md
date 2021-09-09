@@ -1,10 +1,10 @@
 # Guba Mariia
 
-### Contact details:
-**E-mail:** bachicada@gmail.com;
-**Telegram:** 'https://t.me/MaryGub';
-**GitHub:** https://github.com/Bachicada;
-**Discord:** Bachicada#7788;
+## Contact details:
+**E-mail:** bachicada@gmail.com;\
+**Telegram:** ['https://t.me/MaryGub'](@MaryGub);\
+**GitHub:** [https://github.com/Bachicada](Bachicada);\
+**Discord:** Bachicada#7788;\
 
 ## About myself: 
 > My academic specialization is economics. I'm fascionated by numbers and idea that the whole world may be represented by different mathematical and algorithmical models. Don't have much experience in coding, but looking forward to start.
@@ -15,9 +15,9 @@
 * Research
 * Organization.
 
-### Code example:
-#### Typical Arrays Problems:
-**The goal the code to implement 3 functions: max, min, and avg for searching minimal value, maximal value, and an average value of a given array.**
+## Code example:
+**Typical Arrays Problems:**
+*The goal the code to implement 3 functions: max, min, and avg for searching minimal value, maximal value, and an average value of a given array.*
 ```javascript
 exports.min = function min (array) {
   if ((array===undefined)||(array.length===0)){ return 0;}
@@ -46,6 +46,6 @@ exports.avg = function avg (array) {
      return sum/array.length;
      }
 ```
-### Courses:
+## Courses:
 *[JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/);
 
