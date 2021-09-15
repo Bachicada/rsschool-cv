@@ -1,76 +1,174 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>CV Guba Mariia</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href='highlight/styles/base16/summerfruit-dark.min.css'>
+    <script src='highlight/highlight.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
-    <header>
-        <div class='top'>
-            <div>  
-                <img id='my-photo' src='pics/profile-photo.jpg' alt='My Photo'> 
-            </div>
+      <div class='wrapper'>
+       <header>
+          <div class='top-container'>
             <div id='name'>
-               <h1> Mariia Guba </h1>
-               <h2> Junior JS-Developer </h2>
+                <h1> Mariia Guba </h1>
             </div>
-            <div id='contacts'>
-                <h3>Contact details:</h3>
-                 <ul> 
+            <div class='header-menu'>
+                <div class="nav-icon">
+                    <span></span>
+               </div>
+                <nav class='menu-body'>
+                    <ul class='menu-list'>
+                       <li><a class='menu-link' href='#profile'>Profile</a></li>
+                       <li><a class='menu-link' href='#skills'>Skills</a></li>
+                       <li><a class='menu-link' href='#education'>Education</a></li>
+                       <li><a class='menu-link' href='#languages'>Languages</a></li>
+                       <li><a class='menu-link' href='#work'>Work</a></li>
+                       <li><a class='menu-link' href='#code'>Code</a></li>
+                       <li><a class='menu-link' href='#examples-of-projects'>Projects</a></li>
+                       <li><a class='menu-link' href='#contacts'>Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>  
+
+    <div class='CVbody'>   
+        <aside> 
+            <div class='photo'>  
+               <img id='my-photo' src='pics/profile-photo.jpg' alt='My Photo'> 
+            </div>
+            <section>
+               <div class='anchor' id='skills'>
+                   <h2 >Professional and personal skills:</h2>
+                   <ul> 
+                       <li> Microsoft Office (Word, Excel, Outlook, PowerPoint);</li>
+                       <li> HTML/CSS;</li>
+                       <li> JavaScript Basics;</li>
+                       <li> Git, GitHub;</li>
+                       <li> VS Code;</li>
+                       <li> Research;</li>
+                       <li> Organization; </li>
+                   </ul>
+               </div>
+               <div class='anchor' id='languages'>
+                   <h2 >Languages:</h2>
+                   <ul> 
+                       <li> English - Intermediate;</li>
+                       <li> Russian - Fluent;</li>
+                       <li> Ukrainian - Native.</li>
+                   </ul>
+               </div>
+            </section>
+            <div class='anchor' id='contacts'>
+                <h2>Contact details:</h2>
+                <ul> 
                    <li><img class='iconpic' src='pics/location.png' alt='location'> Saint-Petersburg, Russia</li>
                    <li> <a href='mailto:bachicada@gmail.com'><img class='iconpic' src='pics/mail.png' alt='envelope'> bachicada@gmail.com </a> </li>
                    <li> <a href='https://t.me/MaryGub'><img class='iconpic' src='pics/telegram.png' alt='telegram'> MaryGub </a> </li>
-                </ul>
+               </ul>
             </div>
-        </div>
-    </header>   
-    <article>
-        <h3>Profile</h3>
-        <p>My academic specialization is economics. I'm fascionated by numbers and idea that the whole world may be represented by different mathematical and algorithmical models. Don't have much experience in coding, but working hard till the proper result.</p>
-    </article>      
-    <div class='CVbody'>    
-        <aside> 
-            <h3>Professional and personal skills:</h3>
-            <ul> 
-               <li> Microsoft Office (Word, Excel, Outlook, PowerPoint);</li>
-               <li> HTML/CSS;</li>
-               <li> Research;</li>
-               <li> Organization; </li>
-               <li> Languages: Ukrainian, Russian, English (Intermediate)</li>
-           </ul>
         </aside>
+    
+      
         <main>
-            <section> 
-                <h3> Education </h3> 
+            <article class='anchor' id='profile'>
+                 <h2 >Profile</h2>
+                 <p>My academic specialization is economics. I'm fascionated by numbers and idea that the whole world may be represented by different mathematical and algorithmical models. Don't have much experience in coding, but working till the proper result.</p>
+            </article>
+            <section class='anchor' id='education'> 
+                <h2> Education </h2> 
                 <ul> 
-                   <li> <h4>2005-2010</h4>
-                        <p> Higher education: Volodymyr Dahl East Ukrainian National University, Lugansk, Ukraine</p>
+                   <li> <h4>Higher education</h4>
+                        <h5>2005-2010</h5>
+                        <p> <a href='https://snu.edu.ua/en/'> - Volodymyr Dahl East Ukrainian National University, Lugansk, Ukraine</a></p>
                         <p> Specialization: Economics of enterprize</p>
+                   </li>
+                   <li> <h4>Courses</h4>
+                        <h5>2021</h5>
+                        <p><a href='https://rs.school/js-stage0/'> - JavaScript/Front-end. Stage 0</a></p>
                    </li>
                 </ul>
             </section>
-            <section> 
-                <h3> Working experience</h3>
+            <section class='anchor' id='work'> 
+                <h2> Working experience:</h2>
                 <ul>
                    <li>
-                   <h4>2011-2014 - Deputy chief of orders Department for EpicentrK, Lugansk, Ukraine:</h4>
-                       <ul>
-                          <li>work on supplying with articles of trade:analysing remains,ordering, returning;</li>
-                          <li>work with lots of information, tables, documents.</li> 
-                          <li>coordinating team work of a group.</li>
-                        </ul>
+                       <h4>2011-2014</h4>
+                       <p> - Deputy chief of orders Department for EpicentrK, Lugansk, Ukraine.</p>
                    </li>
                    <li>
-                   <h4>2015-2018 - Dispatcher for Altermed, Group of Clinics, Saint-Petersburg, Russia:</h4>   
-                        <ul>
-                          <li>comunicate with patients in order to organize vizits to the clinics; </li>
-                         <li>deal with schedules, prices, information about medical treatments and beauty procedures.</li>
-                        </ul>
+                       <h4>2015-2018 </h4> 
+                       <p> - Dispatcher for Altermed, Group of Clinics, Saint-Petersburg, Russia.</p>
                    </li>
                 </ul>    
             </section>
-       </main>
+
+            <section class='anchor' id='code'>
+                <h2> Code example:</h2>
+                <h4>Typical Arrays Problems</h4>
+                <p><i>The goal the of the code to implement 3 functions: max, min, and avg for searching minimal value, maximal value, and an average value of a given array.</i></p>
+                <pre><code> JavaScript:
+                exports.min = function min (array) {
+                    if ((array===undefined)||(array.length===0)){ return 0;}
+                    const compare = (a, b)=> {
+                    return a-b;
+                           }
+                    array.sort(compare);
+                    return array[0]
+                          }
+                        
+                exports.max = function max (array) {
+                    if ((array===undefined)||(array.length===0)){ return 0;}
+                    const compare = (a, b)=> {
+                    return b-a;
+                    }
+                    array.sort(compare);
+                    return array[0]
+                          }
+                        
+                exports.avg = function avg (array) {
+                    if ((array===undefined)||(array.length===0)){ return 0;}
+                    let sum=0;
+                    for (let i=0;i < array.length;i++) {
+                        sum +=array[i];
+                        }
+                    return (sum/array.length);
+                        }
+                            </code>
+                        </pre>
+                
+            </section>
+            <section class='anchor' id='examples-of-projects'>
+                <h2> Examples of projects:</h2>
+                    <div class='projects'>
+                         <div>
+                             <h3>Drum kit</h3>
+                             <p class='description'>*Music application made during <a href='https://rs.school/js-stage0/'>'JavaScript/Front-end Course. Stage 0'</a>.</p> 
+                             <p><b>- Main function</b> - play sounds on a keystoke or mouse click. Activating different buttons produce different sound.</p>
+                             <p><b>- Skills</b> - HTML, CSS, JavaScript, DOM-structures.</p>
+                             
+                          </div>    
+                         <a href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/drum-kit/index1'><img class='project-pic' src='pics/drum.jpg' alt='drum-kit'></a>
+                    </div>
+                    <div class='projects'>
+                         <div>
+                            <h3>Custom video player</h3>
+                            <p class='description'>*Custom video player made during <a href='https://rs.school/js-stage0/'>'JavaScript/Front-end Course. Stage 0'</a>.</p>
+                            <p><b>- Main function</b> - play video file. User may change playback options, use hot keys, switch to full-screen mode </p>
+                            <p><b>- Skills</b> - HTML, CSS, JavaScript, DOM-structures.</p>
+                         </div>   
+                         <a href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/custom-video-player'><img class='project-pic' src='pics/player.jpg' alt='player'></a>
+                    </div>    
+                 
+            </section>
+           </main>
+
     </div>
     <footer>
         <div>
@@ -82,6 +180,11 @@
             <p><a href='https://rs.school/js/'>RS SCHOOL</a></p>
        </div>
   </footer>
+  </div>
+  
+
+
+  <script src='script.js'></script>
   </body>
   
 </html>
