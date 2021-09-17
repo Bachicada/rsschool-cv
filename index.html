@@ -14,8 +14,8 @@
   </head>
   <body>
       <div class='wrapper'>
-       <header>
-            <div class='top-container container'>
+       <header class='container'>
+            <div class='top-container'>
                 <div id='name'>
                     <h1> Mariia Guba </h1>
                 </div>
@@ -72,9 +72,9 @@
                 <h2>Contact details:</h2>
                 <ul> 
                    <li><img class='iconpic' src='pics/location.png' alt='location'> Saint-Petersburg, Russia</li>
-                   <li> <a href='mailto:bachicada@gmail.com'><img class='iconpic' src='pics/mail.png' alt='envelope'> bachicada@gmail.com </a> </li>
-                   <li> <a href='https://t.me/MaryGub'><img class='iconpic' src='pics/telegram.png' alt='telegram'> MaryGub </a> </li>
-                   <li> <a href='https://github.com/Bachicada'><img class='iconpic' src='pics/git-con.png' alt='git icon'> Bachicada </a> </li>
+                   <li> <a href='mailto:bachicada@gmail.com' rel="external"><img class='iconpic' src='pics/mail.png' alt='envelope'> bachicada @gmail.com </a> </li>
+                   <li> <a href='https://t.me/MaryGub' rel="external"><img class='iconpic' src='pics/telegram.png' alt='telegram'> MaryGub </a> </li>
+                   <li> <a href='https://github.com/Bachicada' rel="external"><img class='iconpic' src='pics/git-con.png' alt='git icon'> Bachicada </a> </li>
                </ul>
             </section>
         </aside>
@@ -90,12 +90,12 @@
                 <ul> 
                    <li> <h4>Higher education</h4>
                         <h5>2005-2010</h5>
-                        <p> <a href='https://snu.edu.ua/en/'> - Volodymyr Dahl East Ukrainian National University, Lugansk, Ukraine</a></p>
+                        <p> <a href='https://snu.edu.ua/en/' rel="external"> - Volodymyr Dahl East Ukrainian National University, Lugansk, Ukraine</a></p>
                         <p> Specialization: Economics of enterprize</p>
                    </li>
                    <li> <h4>Courses</h4>
                         <h5>2021</h5>
-                        <p><a href='https://rs.school/js-stage0/'> - JavaScript/Front-end. Stage 0</a></p>
+                        <p><a href='https://rs.school/js-stage0/' rel="external"> - JavaScript/Front-end. Stage 0</a></p>
                    </li>
                 </ul>
             </section>
@@ -115,36 +115,23 @@
 
             <section class='anchor' id='code'>
                 <h2> Code example:</h2>
-                <h4>Typical Arrays Problems</h4>
-                <p><i>The goal the of the code to implement 3 functions: max, min, and avg for searching minimal value, maximal value, and an average value of a given array.</i></p>
+                <h4>Sum of digits</h4>
+                <p><i>The goal the of the code to replace given number with the sum of its digits until we get to a one digit number.</i></p>
                 <div class='code'>
-                    <pre><code> JavaScript:
-                exports.min = function min (array) {
-                    if ((array===undefined)||(array.length===0)){ return 0;}
-                    const compare = (a, b)=> {
-                    return a-b;
-                           }
-                    array.sort(compare);
-                    return array[0]
-                          }
-                        
-                exports.max = function max (array) {
-                    if ((array===undefined)||(array.length===0)){ return 0;}
-                    const compare = (a, b)=> {
-                    return b-a;
-                    }
-                    array.sort(compare);
-                    return array[0]
-                          }
-                        
-                exports.avg = function avg (array) {
-                    if ((array===undefined)||(array.length===0)){ return 0;}
-                    let sum=0;
-                    for (let i=0;i &lt; array.length;i++) {
-                        sum +=array[i];
-                        }
-                    return (sum/array.length);
-                        }
+                    <pre><code> 
+JavaScript:
+                
+function getSumOfDigits(number) {
+    let arr=number.toString().split('').map(el=>parseInt(el))
+    const getSum = (arr) => arr.reduce((a, b) => a + (+b), 0); 
+    
+      while (arr.length != 1) {
+       let sum = getSum(arr);
+        arr = sum.toString().split('');
+      }
+  
+      return parseInt(arr[0]);
+    }
                             </code>
                         </pre>
                     </div>
@@ -154,45 +141,64 @@
                     <div class='projects'>
                          <div class='text'>
                              <h3>Drum kit</h3>
-                             <p class='description'>*Music application made during <a href='https://rs.school/js-stage0/'>'JavaScript/Front-end Course. Stage 0'</a>.</p> 
+                             <p class='description'>*Music application made during <a href='https://rs.school/js-stage0/' rel="external">'JavaScript/Front-end Course. Stage 0'</a>.</p> 
                              <p><b><i>- Main function</i></b> - play sounds on a keystoke or mouse click. Activating different buttons produce different sound.</p>
-                             <p><b><i>- Skills</i></b> - <b style='color:#167047;'>HTML, CSS, JavaScript, DOM-structures.</b></p>
+                             <ul class='tags'>
+                                 <li>HTML</li>
+                                 <li>CSS</li>
+                                 <li>JavaScript</li>
+                                 <li>DOM-structures</li>
+                            </ul>
                              
                           </div>    
-                         <a class='poster' href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/drum-kit/index1'><img class='project-pic' src='pics/drum.jpg' alt='drum-kit'></a>
+                         <div class='poster'>
+                             <a  href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/drum-kit/index1' rel="external"><img class='project-pic' src='pics/drum.jpg' alt='drum-kit'></a>
+                         </div>
                     </div>
                     <div class='projects'>
                          <div class='text'>
                             <h3>Custom video player</h3>
-                            <p class='description'>*Custom video player made during <a href='https://rs.school/js-stage0/'>'JavaScript/Front-end Course. Stage 0'</a>.</p>
+                            <p class='description'>*Custom video player made during <a href='https://rs.school/js-stage0/' rel="external">'JavaScript/Front-end Course. Stage 0'</a>.</p>
                             <p><b><i>- Main function</i></b> - play video file. User may change playback options, use hot keys, switch to full-screen mode </p>
-                            <p><b><i>- Skills</i></b> - <b style='color:#167047'>HTML, CSS, JavaScript, DOM-structures.</b></p>
+                            <ul class='tags'>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>DOM-structures</li>
+                           </ul>
                          </div>   
-                         <a class='poster' href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/custom-video-player'><img class='project-pic' src='pics/player.jpg' alt='player'></a>
+                         <div class='poster'>
+                            <a  href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/custom-video-player' rel="external"><img class='project-pic' src='pics/player.jpg' alt='drum-kit'></a>
+                        </div>
                     </div>    
                     <div class='projects'>
                         <div class='text'>
                            <h3>Museum site</h3>
-                           <p class='description'>*Landing page of Louvre Museum<a href='https://rs.school/js-stage0/'> 'JavaScript/Front-end Course. Stage 0'</a>.</p>
-                           <p><b><i>- Skills</i></b> - <b style='color:#167047'>HTML, CSS, Figma, Fixed layout.</b></p>
+                           <p class='description'>*Landing page of Louvre Museum<a href='https://rs.school/js-stage0/' rel="external"> 'JavaScript/Front-end Course. Stage 0'</a>.</p>
+                           <ul class='tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Figma</li>
+                            <li>Fixed layout</li>
+                       </ul>
                         </div>   
-                        <a class='poster' href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/museum/'><img class='project-pic' src='pics/museum.jpg' alt='player'></a>
-                   </div>   
+                        <div class='poster'>
+                        <a class='poster' href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/museum/' rel="external"><img class='project-pic' src='pics/museum.jpg' alt='player'></a>
+                        </div>
+                    </div>   
                  
             </section>
            </main>
 
     </div>
-    <footer class='container'>
-        <div>
+    <footer>
             <time>2021</time>
-            <p><a href='https://github.com/Bachicada'>Guba Mariia on GitHub</a></p>
-       </div>
-       <div>
+            <p><a href='https://github.com/Bachicada' rel="external">Guba Mariia on GitHub</a></p>
+       
+        
             <img id='f-logo' src='https://rs.school/images/rs_school_js.svg' alt='Logo'> 
-            <p><a href='https://rs.school/js/'>RS SCHOOL</a></p>
-       </div>
-  </footer>
+            <p><a href='https://rs.school/js/' rel="external">RS SCHOOL</a></p>
+    </footer>
   </div>
   
 
