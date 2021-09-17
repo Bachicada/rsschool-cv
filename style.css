@@ -276,7 +276,7 @@ padding: 0;}
   }
   .menu-body{
     position: fixed;
-    top:-100%;
+    top:-150%;
     right:0;
     width: 40%;
     background-color:rgba(12, 22, 29, 0.9);
