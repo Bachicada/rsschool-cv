@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
      }
 body.lock{
   overflow:hidden;
@@ -27,6 +28,7 @@ header{
   top:0;
   z-index: 10;
 }
+.container {max-width: 1200px;}
 .top-container{
   margin-left: 0;
   margin-right: 0;
@@ -40,9 +42,7 @@ header{
   -webkit-box-shadow: 0px 7px 48px 0px rgba(12, 22, 29, 0.5);
   -moz-box-shadow: 0px 7px 48px 0px rgba(12, 22, 29, 0.5);
   box-shadow: 0px 7px 48px 0px rgba(12, 22, 29, 0.5);
-  max-width: 1200px;
 }
-
 #name{z-index: 11;}
 h1{margin-top: 0;
   margin-bottom: 0;
@@ -57,12 +57,13 @@ h1{margin-top: 0;
         }
 
 .CVbody {
+    margin: 0 auto;
     margin-top: 60px;
     display:flex;
     justify-content: space-between;
     flex-direction: row;
     font-size: 21px;
-    width:100%;
+    max-width:1200px;
     height: 100%;
     z-index: 2;
     background: #EDE8F6;
@@ -71,7 +72,7 @@ h1{margin-top: 0;
 aside{
     background-color: #243058;
     color:bisque;
-    flex:0 1 40%;
+    flex:0 2 30%;
   }
 aside h2{box-shadow: 9px 11px 8px 0px rgba(12, 22, 29, 0.5);}
 
@@ -87,7 +88,8 @@ margin-right: 5px;
 
 main{display: flex;
   flex-direction: column;
-  flex-wrap: wrap;}
+  flex-wrap: wrap;
+  flex:0 1 70%;}
 
   #name, 
   #contacts,
@@ -107,7 +109,7 @@ main{display: flex;
   h3, h4, h5, p{margin:0;}
   
   
-  #contacts>ul>li {font-size:20px;}
+  #contacts>ul>li {font-size:25px;}
   main{margin-left: 25px;}
   article {text-align: center;}
   code{font-size:15px;}       
@@ -118,7 +120,7 @@ main{display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     display: flex;
   justify-content: space-between;
   background-color:whitesmoke;
@@ -128,12 +130,14 @@ main{display: flex;
   width:50%;
   height: 100%;}
   .poster{width:80%;}
-  .projects h3{background:linear-gradient(90deg, rgba(232,247,244,1) 0%, rgba(36,48,88,1) 100%);}
+  .projects h3{
+    background: rgb(228,209,212);
+    background: linear-gradient(90deg, rgba(228,209,212,1) 0%, rgba(200,64,217,1) 44%, rgba(84,16,130,1) 100%);}
   
   .description{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
-    font-variant: small-caps;
+    font-style: italic;
   }
   .project-pic{
     width: 100%;
@@ -158,14 +162,16 @@ main{display: flex;
       }
   
 
-@media  screen and (max-width:1048px){
-  body {max-width: 1048px;}
+@media  screen and (max-width:1024px){
+  body {max-width: 1024px;}
+  .container {max-width: 1024px;}
   h1 {font-size:55px;
   transition: 0.5s;}
 }
 
 .header-menu{display: flex;
-align-items: center;}
+align-items: center;
+}
 
 .menu-body{margin-right: 20px;
 }
@@ -270,9 +276,8 @@ padding: 0;}
   }
   .menu-body{
     position: fixed;
-    top:-100%;
+    top:-150%;
     right:0;
-    height: 55%;
     width: 40%;
     background-color:rgba(12, 22, 29, 0.9);
     padding: 100px 30px 30px 30px;
@@ -303,6 +308,10 @@ padding: 0;}
     left:0;
     height: 60px;
     background:linear-gradient(90deg, rgba(232,247,244,1) 0%, rgba(36,48,88,1) 100%);
+    -webkit-box-shadow: 0px 7px 48px 0px rgba(12, 22, 29, 0.5);
+  -moz-box-shadow: 0px 7px 48px 0px rgba(12, 22, 29, 0.5);
+  box-shadow: 0px 7px 48px 0px rgba(12, 22, 29, 0.5);
+
   }
 
 }
@@ -312,7 +321,7 @@ padding: 0;}
   #contacts>ul>li {font-size: 1em;}
   .description{font-size: 1em;}
   .menu-body{width:95%;
-  height: 70%;}
+  height: 58%;}
   .menu-body.active a.menu-link{
     font-size: 40px;
   }
