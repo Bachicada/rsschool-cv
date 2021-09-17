@@ -21,3 +21,15 @@ if (menuLinks.length>0){
         menuLink.addEventListener('click', clickOnMenu)
     })
 }
+//open link in a new window
+function externalLinks() {
+    const links = document.getElementsByTagName("a");
+    console.log(links)
+    for (i=0; i<links.length; i++) {
+      link = links[i];
+      if (link.getAttribute("href") && link.getAttribute("rel") == "external")
+      link.target = "_blank";
+    }
+   }
+   
+   window.onload = externalLinks;
