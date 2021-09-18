@@ -150,8 +150,24 @@ main{display: flex;
   article {text-align: center;
   width:100%;}
   section {width:100%;}
-  code{font-size:15px;}       
-  
+  pre{margin-bottom: 0;}
+  code{font-size:18px;
+  white-space: pre-wrap;
+word-break: break-all;} 
+  .codewars{margin-top: -25px;
+  margin-bottom: 20px;}
+  .codewars a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color:black;
+  }
+  .codewars p{
+    margin-left: 10px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+  }
   .projects{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -223,20 +239,29 @@ padding:0;}
 
 
 
-      @media  screen and (max-width:1113px){
-        h1 {font-size:45px;
-        transition: 0.5s;}
+      @media  screen and (max-width:1115px){
+        h1 {font-size:42px;}
       }
       @media  screen and (max-width:1059px){
-        h1 {font-size:40px;
-        transition: 0.5s;}
+        h1 {font-size:40px;}
         .menu-link {font-size:17px;
           transition: 0.5s;}
       }
       @media  screen and (max-width:960px){
-        h1 {font-size:34px;
-        transition: 0.5s;}
-        .menu-link {font-size:15px;
+        h1 {font-size:34px;}
+        .menu-list li{margin-left: 5px;
+          margin-right: 5px;}
+      }
+      @media  screen and (max-width:900px){
+        h1 {font-size:30px;}
+        .menu-list {padding-right: 0;
+          transition: 0.5s;}
+       
+        .menu-link {font-size:12px;
+          transition: 0.5s;}
+      }
+      @media  screen and (max-width:784px){
+        .menu-list {padding-right: 0;
           transition: 0.5s;}
       }
 
@@ -359,6 +384,9 @@ padding:0;}
           font-size: 2em;
         }
         .menu-list{overflow: auto;}
+        .codewars p{
+          font-size: 20px;
+        }
       }
       @media  screen and (max-width:376px){
         h2, h3, h4, aside, article, section, footer {font-size: 1em;}
@@ -370,4 +398,6 @@ padding:0;}
           transition:all 0.5s;
               }
         }
-      
+        @media  screen and (max-width:320px){
+          footer {font-size:12px;}
+        }

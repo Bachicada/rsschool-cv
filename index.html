@@ -125,15 +125,18 @@ function getSumOfDigits(number) {
     let arr=number.toString().split('').map(el=>parseInt(el))
     const getSum = (arr) => arr.reduce((a, b) => a + (+b), 0); 
     
-      while (arr.length != 1) {
+    while (arr.length != 1) {
        let sum = getSum(arr);
-        arr = sum.toString().split('');
+       arr = sum.toString().split('');
       }
   
       return parseInt(arr[0]);
     }
                             </code>
                         </pre>
+                    </div>
+                    <div class='codewars'>
+                        <a href='https://www.codewars.com/users/Bachicada' rel='external'><img class='iconpic' src='pics/codewars.svg' alt='codewars account'><p>More examples on the Codewars</p></a>
                     </div>
             </section>
             <section class='anchor' id='examples-of-projects'>
