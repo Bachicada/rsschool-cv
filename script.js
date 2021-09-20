@@ -24,7 +24,6 @@ if (menuLinks.length>0){
 //open link in a new window
 function externalLinks() {
     const links = document.getElementsByTagName("a");
-    console.log(links)
     for (i=0; i<links.length; i++) {
       link = links[i];
       if (link.getAttribute("href") && link.getAttribute("rel") == "external")
@@ -33,3 +32,8 @@ function externalLinks() {
    }
    
    window.onload = externalLinks;
+
+   console.log(
+       Самооценка:150 баллов
+       Всё выполнено, за исключением видеоролика.
+   )
