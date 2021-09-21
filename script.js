@@ -33,7 +33,3 @@ function externalLinks() {
    
    window.onload = externalLinks;
 
-   console.log(
-       Самооценка:150 баллов
-       Всё выполнено, за исключением видеоролика.
-   )
