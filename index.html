@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>CV Guba Mariia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href='highlight/styles/base16/summerfruit-dark.min.css'>
+    <script src='highlight/highlight.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+      <div class='wrapper'>
+       <header class='container'>
+            <div class='top-container'>
+                <div id='name'>
+                    <h1> Mariia Guba </h1>
+                </div>
+                <div class='header-menu'>
+                    <div class="nav-icon">
+                        <span></span>
+                    </div>
+                    <nav class='menu-body'>
+                        <ul class='menu-list'>
+                            <li><a class='menu-link' href='#profile'>Profile</a></li>
+                            <li><a class='menu-link' href='#skills'>Skills</a></li>
+                            <li><a class='menu-link' href='#education'>Education</a></li>
+                            <li><a class='menu-link' href='#languages'>Languages</a></li>
+                            <li><a class='menu-link' href='#work'>Work</a></li>
+                            <li><a class='menu-link' href='#code'>Code</a></li>
+                            <li><a class='menu-link' href='#examples-of-projects'>Projects</a></li>
+                            <li><a class='menu-link' href='#contacts'>Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>  
+
+    <div class='CVbody container'>   
+        <aside> 
+            <div class='photo'>  
+               <img id='my-photo' src='pics/profile-photo.jpg' alt='My Photo'> 
+            </div>
+            <section>
+               <div class='anchor' id='skills'>
+                   <h2 >Professional and personal skills:</h2>
+                   <ul> 
+                       <li><img class='iconpic' src='pics/html-icon.png' alt='icon'> HTML;</li>
+                       <li><img class='iconpic' src='pics/css-icon.png' alt='icon'> CSS;</li>
+                       <li><img class='iconpic' src='pics/figma.png' alt='icon'> Figma;</li>
+                       <li><img class='iconpic' src='pics/js-icon.png' alt='icon'>  JavaScript Basics;</li>
+                       <li><img class='iconpic' src='pics/git-icon2.png' alt='icon'>  Git, GitHub;</li>
+                       <li><img class='iconpic' src='pics/vs-icon.png' alt='icon'> VS Code;</li>
+                       <li><img class='iconpic' src='pics/office-icon.png' alt='icon'>  Microsoft Office (Word, Excel, Outlook, PowerPoint);</li>
+                       <li><img class='iconpic' src='pics/res-icon.png' alt='icon'>  Research;</li>
+                       <li><img class='iconpic' src='pics/org-icon.png' alt='icon'>  Organization; </li>
+                   </ul>
+               </div>
+               <div class='anchor' id='languages'>
+                   <h2 >Languages:</h2>
+                   <ul> 
+                       <li> English - Intermediate;</li>
+                       <li> Russian - Fluent;</li>
+                       <li> Ukrainian - Native.</li>
+                   </ul>
+               </div>
+            </section>
+            <section class='anchor' id='contacts'>
+                <h2>Contact details:</h2>
+                <ul> 
+                   <li><img class='iconpic' src='pics/location.png' alt='location'> Saint-Petersburg, Russia</li>
+                   <li> <a href='mailto:bachicada@gmail.com' rel="external"><img class='iconpic' src='pics/mail.png' alt='envelope'> bachicada @gmail.com </a> </li>
+                   <li> <a href='https://t.me/MaryGub' rel="external"><img class='iconpic' src='pics/telegram.png' alt='telegram'> MaryGub </a> </li>
+                   <li> <a href='https://github.com/Bachicada' rel="external"><img class='iconpic' src='pics/git-con.png' alt='git icon'> Bachicada </a> </li>
+               </ul>
+            </section>
+        </aside>
+    
+      
+        <main>
+            <article class='anchor' id='profile'>
+                 <h2 >Profile</h2>
+                 <p>My academic specialization is economics. I'm fascionated by numbers and idea that the whole world may be represented by different mathematical and algorithmical models. Don't have much experience in coding, but working till the proper result.</p>
+            </article>
+            <section class='anchor' id='education'> 
+                <h2> Education </h2> 
+                <ul> 
+                   <li> <h4>Higher education</h4>
+                        <h5>2005-2010</h5>
+                        <p> <a href='https://snu.edu.ua/en/' rel="external"> - Volodymyr Dahl East Ukrainian National University, Lugansk, Ukraine</a></p>
+                        <p> Specialization: Economics of enterprize</p>
+                   </li>
+                   <li> <h4>Courses</h4>
+                        <h5>2021</h5>
+                        <p><a href='https://rs.school/js-stage0/' rel="external"> - JavaScript/Front-end. Stage 0</a></p>
+                   </li>
+                </ul>
+            </section>
+            <section class='anchor' id='work'> 
+                <h2> Working experience:</h2>
+                <ul>
+                   <li>
+                       <h4>2011-2014</h4>
+                       <p> - Deputy chief of orders Department for EpicentrK, Lugansk, Ukraine.</p>
+                   </li>
+                   <li>
+                       <h4>2015-2018 </h4> 
+                       <p> - Dispatcher for Altermed, Group of Clinics, Saint-Petersburg, Russia.</p>
+                   </li>
+                </ul>    
+            </section>
+
+            <section class='anchor' id='code'>
+                <h2> Code example:</h2>
+                <h4>Sum of digits</h4>
+                <p><i>The goal the of the code to replace given number with the sum of its digits until we get to a one digit number.</i></p>
+                <div class='code'>
+                    <pre><code> 
+JavaScript:
+                
+function getSumOfDigits(number) {
+    let arr=number.toString().split('').map(el=>parseInt(el))
+    const getSum = (arr) => arr.reduce((a, b) => a + (+b), 0); 
+    
+    while (arr.length != 1) {
+       let sum = getSum(arr);
+       arr = sum.toString().split('');
+      }
+  
+      return parseInt(arr[0]);
+    }
+                            </code>
+                        </pre>
+                    </div>
+                    <div class='codewars'>
+                        <a href='https://www.codewars.com/users/Bachicada' rel='external'><img class='iconpic' src='pics/codewars.svg' alt='codewars account'><p>More examples on the Codewars</p></a>
+                    </div>
+            </section>
+            <section class='anchor' id='examples-of-projects'>
+                <h2> Examples of projects:</h2>
+                    <div class='projects'>
+                         <div class='text'>
+                             <h3>Drum kit</h3>
+                             <p class='description'>*Music application made during <a href='https://rs.school/js-stage0/' rel="external">'JavaScript/Front-end Course. Stage 0'</a>.</p> 
+                             <p><b><i>- Main function</i></b> - play sounds on a keystoke or mouse click. Activating different buttons produce different sound.</p>
+                             <ul class='tags'>
+                                 <li>HTML</li>
+                                 <li>CSS</li>
+                                 <li>JavaScript</li>
+                                 <li>DOM-structures</li>
+                            </ul>
+                             
+                          </div>    
+                         <div class='poster'>
+                             <a  href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/drum-kit/index1' rel="external"><img class='project-pic' src='pics/drum.jpg' alt='drum-kit'></a>
+                         </div>
+                    </div>
+                    <div class='projects'>
+                         <div class='text'>
+                            <h3>Custom video player</h3>
+                            <p class='description'>*Custom video player made during <a href='https://rs.school/js-stage0/' rel="external">'JavaScript/Front-end Course. Stage 0'</a>.</p>
+                            <p><b><i>- Main function</i></b> - play video file. User may change playback options, use hot keys, switch to full-screen mode </p>
+                            <ul class='tags'>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>DOM-structures</li>
+                           </ul>
+                         </div>   
+                         <div class='poster'>
+                            <a  href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/custom-video-player' rel="external"><img class='project-pic' src='pics/player.jpg' alt='drum-kit'></a>
+                        </div>
+                    </div>    
+                    <div class='projects'>
+                        <div class='text'>
+                           <h3>Museum site</h3>
+                           <p class='description'>*Landing page of Louvre Museum<a href='https://rs.school/js-stage0/' rel="external"> 'JavaScript/Front-end Course. Stage 0'</a>.</p>
+                           <ul class='tags'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Figma</li>
+                            <li>Fixed layout</li>
+                       </ul>
+                        </div>   
+                        <div class='poster'>
+                        <a class='poster' href='https://rolling-scopes-school.github.io/bachicada-JSFEPRESCHOOL/museum/' rel="external"><img class='project-pic' src='pics/museum.jpg' alt='player'></a>
+                        </div>
+                    </div>   
+                 
+            </section>
+           </main>
+
+    </div>
+    <footer>
+            <time>2021</time>
+            <p><a href='https://github.com/Bachicada' rel="external">Guba Mariia on GitHub</a></p>
+       
+        
+            <img id='f-logo' src='https://rs.school/images/rs_school_js.svg' alt='Logo'> 
+            <p><a href='https://rs.school/js/' rel="external">RS SCHOOL</a></p>
+    </footer>
+  </div>
+  
+
+
+  <script src='script.js'></script>
+  </body>
+  
+</html>
